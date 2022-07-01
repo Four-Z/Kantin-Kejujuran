@@ -3,7 +3,9 @@ a website for SEA COMPFEST submission
 
 ## Prerequisite
 
+##### Composer
 [Composer](https://getcomposer.org/)
+##### XAMPP 
 [XAMPP Version 8.0](https://www.apachefriends.org/download.html)
  
 ## Installation
