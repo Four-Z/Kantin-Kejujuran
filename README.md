@@ -1,6 +1,10 @@
 # Website Kantin Kejujuran
 a website for SEA COMPFEST submission
 
+## DEMO ONLINE
+
+http://kantinkejujuran01.herokuapp.com/
+
 ## Prerequisite
 
 ##### Composer
