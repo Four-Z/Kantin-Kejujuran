@@ -34,3 +34,8 @@ composer install
 php artisan serve
 ```
 
+###### 4. Make Storage Link
+```
+php artisan storage:link
+```
+
