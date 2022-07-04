@@ -27,7 +27,7 @@
                     <div class="col-md-3 mb-3">
                         <div class="card">
                             <div class="card-body text-center">
-                                <img src="{{ url('assets/products') }}/{{ $product->image_path }}" class="img-fluid">
+                                <img src="{{ asset('storage/' . $product->image_path) }}" class="img-fluid">
                                 <div class="row mt-2">
                                     <div class="col-md-12">
                                         <h5><strong>{{ $product->name }}</strong> </h5>

@@ -35,15 +35,16 @@ class HomeController extends Controller
             'foto' => 'required|image|mimes:jpeg,png,jpg',
         ]);
 
-        $foto = $req->file('foto');
-        $random_name = Str::random(28);
-        $foto->move(public_path('/assets/products'), $random_name);
+        // $foto = $req->file('foto');
+        // $random_name = Str::random(28);
+        // $foto->move(public_path('/assets/products'), $random_name);
+        $dir_foto = $req->file('foto')->store('foto_products');
 
         Product::create([
             'name' => $req->product_name,
             'price' => $req->price,
             'description' => $req->desc,
-            'image_path' => $random_name,
+            'image_path' => $dir_foto,
             'student_id' => Auth::user()->student_id
         ]);
 
